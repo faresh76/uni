@@ -23,7 +23,7 @@ AS
         PARSE_V1_CREATE_LOG(logs.data, logs.topics).token as token,
         PARSE_V1_CREATE_LOG(logs.data, logs.topics).exchange as pair
     FROM `bigquery-public-data.crypto_ethereum.logs` AS logs
-    WHERE address = '0xc0a47dfe034b400b47bdad5fecda2621de6c4d95'
+    WHERE address = '0xb21dddb8CD2d067275Ff965C837406F7848b9841'
     AND topics[SAFE_OFFSET(0)] = '0x9d42cb017eb05bd8944ab536a8b35bc68085931dd5f4356489801453923953f9'
 );
 
